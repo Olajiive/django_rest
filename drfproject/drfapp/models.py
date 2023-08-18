@@ -4,6 +4,7 @@ from django.db import models
 class Student(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
+    occupation = models.CharField(max_length=100, default="new string")
     description = models.TextField()
     date_enrolled = models.DateTimeField(auto_now=True)
 
